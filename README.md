@@ -27,7 +27,7 @@ Tutorial how to install Lisk Core (from sources) on Windows 64bit machine
    Press Windows+R keys
    cmd (enter)
    
-   in console:
+   in console:<br>
    cd C:\PostgreSQL
    pgc.bat start
 
