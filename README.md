@@ -37,7 +37,7 @@
    create login roles: your windows account name<br>
 
 8. Start -> Programs -> "Node.js" -> "Node.js command prompt"<br>
-   Now in consone:
+   Now in console:
 
    cd C:\
    git clone https://github.com/LiskHQ/lisk.git<br>
