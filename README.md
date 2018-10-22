@@ -9,13 +9,13 @@ Tutorial how to install Lisk Core (from sources) on Windows 64bit machine
 3. Download and install Python 2.7.14:<br>
    https://www.python.org/ftp/python/2.7.14/python-2.7.14.amd64.msi
  
-   choose - "Install for all users"
+   choose - "Install for all users"<br>
    choose - "Add python.exe to Path"
 
 4. Download and install Microsoft Visual studio 2015 C++ compiler:<br>
    https://go.microsoft.com/fwlink/?LinkId=532606&clcid=0x409
 
-   choose - "Custom" install
+   choose - "Custom" install<br>
    choose - "Programming Languages" -> "Visual C++"
 
 5. Download and install postgres:<br>
