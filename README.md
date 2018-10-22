@@ -39,7 +39,7 @@
 8. Start -> Programs -> "Node.js" -> "Node.js command prompt"<br>
    Now in console:
 
-   cd C:&#92;
+   cd C:&#92;<br>
    git clone https://github.com/LiskHQ/lisk.git<br>
    cd lisk<br>
    git checkout testnet-master<br>
