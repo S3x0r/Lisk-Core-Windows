@@ -39,7 +39,7 @@
 8. Start -> Programs -> "Node.js" -> "Node.js command prompt"<br>
    Now in consone:
 
-   cd C:\<br>
+   cd C:\
    git clone https://github.com/LiskHQ/lisk.git<br>
    cd lisk<br>
    git checkout testnet-master<br>
@@ -52,7 +52,7 @@
    to:<br>
    //child_process.execSync(`mkdir -p ${path.dirname(config.filename)}`);<br>
 
-10. Create "logs" directory in C:\lisk\<br>
+10. Create "logs" directory in C:\lisk\
 
 11. In lisk directory edit: config.json<br>
     change line:<br>
