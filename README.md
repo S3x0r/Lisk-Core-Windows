@@ -1,4 +1,4 @@
-Tutorial how to install Lisk Core (from sources) on Windows 64bit machine 
+<h2>Tutorial how to install Lisk Core (from sources) on Windows 64bit machine</h2>
 
 1. Download and install nodejs 6.14.1:<br>
    https://nodejs.org/download/release/v6.14.1/node-v6.14.1-x64.msi
@@ -10,7 +10,7 @@ Tutorial how to install Lisk Core (from sources) on Windows 64bit machine
    https://www.python.org/ftp/python/2.7.14/python-2.7.14.amd64.msi
  
    choose - "Install for all users"<br>
-   choose - "Add python.exe to Path"
+   choose - "Add python.exe to Path"<br>
 
 4. Download and install Microsoft Visual studio 2015 C++ compiler:<br>
    https://go.microsoft.com/fwlink/?LinkId=532606&clcid=0x409
@@ -21,7 +21,7 @@ Tutorial how to install Lisk Core (from sources) on Windows 64bit machine
 5. Download and install postgres:<br>
    https://oscg-downloads.s3.amazonaws.com/packages/PostgreSQL-10.5-1-win64-bigsql.exe
 
-   choose - "pgAdmin3 LTS"
+   choose - "pgAdmin3 LTS"<br>
 
 6. Run postgres server:<br>
    Press Windows+R keys<br>
@@ -29,12 +29,12 @@ Tutorial how to install Lisk Core (from sources) on Windows 64bit machine
    
    in console:<br>
    cd C:\PostgreSQL<br>
-   pgc.bat start
+   pgc.bat start<br>
 
 7. Start -> Programs -> "PostgreSQL" -> "pgAdmin3 LTS by BigSQL"<br>
-   connect to database
+   connect to database<br>
    create database: lisk_test<br>
-   create login roles: your windows account name
+   create login roles: your windows account name<br>
 
 8. Start -> Programs -> "Node.js" -> "Node.js command prompt"<br>
    Now in consone:
@@ -44,22 +44,21 @@ Tutorial how to install Lisk Core (from sources) on Windows 64bit machine
    cd lisk<br>
    git checkout testnet-master<br>
    npm config set msvs_version 2015<br>
-   npm install
+   npm install<br>
 
 9. In file C:\lisk\logger.js:<br>
-   change line:
+   change line:<br>
    child_process.execSync(`mkdir -p ${path.dirname(config.filename)}`);<br>
    to:<br>
-   //child_process.execSync(`mkdir -p ${path.dirname(config.filename)}`);
-
+   //child_process.execSync(`mkdir -p ${path.dirname(config.filename)}`);<br>
 
 10. Create "logs" directory in C:\lisk\<br>
 
 11. In lisk directory edit: config.json<br>
-    change line:
+    change line:<br>
     "consoleLogLevel": "none",<br>
     to:<br>
-    "consoleLogLevel": "info",
+    "consoleLogLevel": "info",<br>
 
 12. Press Windows+R keys<br>
     cmd (enter)
@@ -71,4 +70,3 @@ Tutorial how to install Lisk Core (from sources) on Windows 64bit machine
     node app.js<br>
 
 Done!
-
