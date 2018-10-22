@@ -24,32 +24,32 @@ Tutorial how to install Lisk Core (from sources) on Windows 64bit machine
    choose - "pgAdmin3 LTS"
 
 6. Run postgres server:<br>
-   Press Windows+R keys
-   cmd (enter)
+   Press Windows+R keys<br>
+   cmd (enter)<br>
    
    in console:<br>
-   cd C:\PostgreSQL
+   cd C:\PostgreSQL<br>
    pgc.bat start
 
 7. Start -> Programs -> "PostgreSQL" -> "pgAdmin3 LTS by BigSQL"<br>
    connect to database
-   create database: lisk_test
+   create database: lisk_test<br>
    create login roles: your windows account name
 
 8. Start -> Programs -> "Node.js" -> "Node.js command prompt"<br>
    Now in consone:
 
-   cd C:\
-   git clone https://github.com/LiskHQ/lisk.git
-   cd lisk
-   git checkout testnet-master
-   npm config set msvs_version 2015
+   cd C:\<br>
+   git clone https://github.com/LiskHQ/lisk.git<br>
+   cd lisk<br>
+   git checkout testnet-master<br>
+   npm config set msvs_version 2015<br>
    npm install
 
 9. In file C:\lisk\logger.js:<br>
    change line:
-   child_process.execSync(`mkdir -p ${path.dirname(config.filename)}`);
-   to:
+   child_process.execSync(`mkdir -p ${path.dirname(config.filename)}`);<br>
+   to:<br>
    //child_process.execSync(`mkdir -p ${path.dirname(config.filename)}`);
 
 
@@ -57,18 +57,18 @@ Tutorial how to install Lisk Core (from sources) on Windows 64bit machine
 
 11. In lisk directory edit: config.json<br>
     change line:
-    "consoleLogLevel": "none",
-    to:
+    "consoleLogLevel": "none",<br>
+    to:<br>
     "consoleLogLevel": "info",
 
 12. Press Windows+R keys<br>
     cmd (enter)
-    
-    in console:
-    cd C:\lisk
+    <br>
+    in console:<br>
+    cd C:\lisk<br>
 
-    and run Lisk Core:
-    node app.js
+    and run Lisk Core:<br>
+    node app.js<br>
 
 Done!
 
