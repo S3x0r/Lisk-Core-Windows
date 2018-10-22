@@ -1,0 +1,153 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "lisk-commander",
+        "scope": null,
+        "escapedName": "lisk-commander",
+        "name": "lisk-commander",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "C:\\"
+    ]
+  ],
+  "_from": "lisk-commander@latest",
+  "_hasShrinkwrap": false,
+  "_id": "lisk-commander@1.0.0",
+  "_inCache": true,
+  "_location": "/lisk-commander",
+  "_nodeVersion": "6.14.3",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/lisk-commander_1.0.0_1534163920515_0.7527257251083699"
+  },
+  "_npmUser": {
+    "name": "shuse2",
+    "email": "shus.toda@gmail.com"
+  },
+  "_npmVersion": "3.10.10",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "lisk-commander",
+    "scope": null,
+    "escapedName": "lisk-commander",
+    "name": "lisk-commander",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/lisk-commander/-/lisk-commander-1.0.0.tgz",
+  "_shasum": "666fa886d439148ed42f9db5ca1eb19d4ef76a02",
+  "_shrinkwrap": null,
+  "_spec": "lisk-commander",
+  "_where": "C:\\",
+  "author": {
+    "name": "Lisk Foundation",
+    "email": "admin@lisk.io"
+  },
+  "bin": {
+    "lisk": "bin/lisk"
+  },
+  "bugs": {
+    "url": "https://github.com/LiskHQ/lisk-commander/issues"
+  },
+  "dependencies": {
+    "babel-polyfill": "=6.26.0",
+    "bip39": "=2.4.0",
+    "chalk": "=2.3.0",
+    "cli-table3": "=0.5.0",
+    "lisk-elements": "=1.0.0",
+    "lockfile": "=1.0.3",
+    "semver": "=5.5.0",
+    "strip-ansi": "=4.0.0",
+    "vorpal": "github:liskhq/vorpal#v1.0.1-lisk"
+  },
+  "description": "A command line interface for Lisk",
+  "devDependencies": {
+    "babel-cli": "=6.26.0",
+    "babel-plugin-istanbul": "=4.1.5",
+    "babel-preset-env": "=1.6.1",
+    "babel-register": "=6.26.0",
+    "chai": "=4.1.2",
+    "chai-as-promised": "=7.1.1",
+    "coveralls": "=3.0.0",
+    "eslint": "=4.16.0",
+    "eslint-config-airbnb-base": "=12.1.0",
+    "eslint-config-lisk-base": "=1.0.0",
+    "eslint-plugin-import": "=2.8.0",
+    "eslint-plugin-mocha": "=4.11.0",
+    "husky": "=0.14.3",
+    "lint-staged": "=5.0.0",
+    "mocha": "=4.0.1",
+    "mocha-bdd": "=0.1.2",
+    "nyc": "=11.3.0",
+    "prettier": "=1.9.2",
+    "sinon": "=4.1.2",
+    "sinon-chai": "=2.14.0"
+  },
+  "directories": {
+    "bin": "./bin"
+  },
+  "dist": {
+    "shasum": "666fa886d439148ed42f9db5ca1eb19d4ef76a02",
+    "tarball": "https://registry.npmjs.org/lisk-commander/-/lisk-commander-1.0.0.tgz",
+    "integrity": "sha512-B4X/g9QNNbbG6vtMCREUGjLYdkku+ROwTBTm37ZBxsNHL/iigdlElVmuJ0O7QAng0HlUwDx0ODohYzShhhQRCg==",
+    "fileCount": 53,
+    "unpackedSize": 434388,
+    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJbcXvQCRA9TVsSAnZWagAA33YP/1jn1y2DoT/dLSjmsVE7\nX05SkuFnmc49qcv2Zyqo60osdGnZAH+pzoyzFkuR2ttUv0QALObVuGpWxn7v\nCjcTmU1nehS5NYBQmjTtRbX2iaGSwvNTiMiwApoYyveG8EXMb1Zl0pkqgUn5\npkmCaTsDOZxp7w5sJkNWMhFgouWKt3yNuxFlNjoaeEWrugnlVYeF3x07FMoL\nK6q5s/QHt6cvKsICtPGavi8ESkyMf0q7JtxFM2bG1Zf71KcYP817Tyr50zXg\nw7khACDiGR2aidi3Q/nGWgFNEZiETNIIK1515vRnjaT0KjuAjnHBFGV+qKDR\nOa5NXkTKaotlLHFu8N70UQkzaZ1KtCaz6F5YRNTUeL62ABjQrBgof1zCCZKy\nglGsxAYmyuP3V8S+5xAbFF7JEcBc9aeJ95j8mhK3EgQExGnVwDnzmmdrrXju\nuflbl8f7j8uYBOCWhvqVc02Km6ek3BCfPLE/JFnV266mM/5UkEa5OYTweePa\neVKGk8djVi+pzpY6j1np4S5Vo5/kOle4cYBus2KTv/a/vIyvU/E/xnMbAY+B\n+6M3mNPNxjWd6ERg9QUpA0Ed4nwO9jQfI5t/Q4hZuvdM1vdTgDAQqOlHqos9\nBbsQPXiJ5jrhDxG7IrqIeQsLyD+4x0FSo2ypUjB+y8FzEQzrYz9mAipOWitb\nrBVO\r\n=9Uf6\r\n-----END PGP SIGNATURE-----\r\n"
+  },
+  "engines": {
+    "node": ">=6.12 <=6.14",
+    "npm": "=3.10.10"
+  },
+  "gitHead": "bb4a23174e55d5b85255b7ca47d618ee9e49b0e1",
+  "homepage": "https://github.com/LiskHQ/lisk-commander#readme",
+  "keywords": [
+    "lisk",
+    "blockchain",
+    "command-line",
+    "nodejs",
+    "javascript"
+  ],
+  "license": "GPL-3.0",
+  "maintainers": [
+    {
+      "name": "willclarktech",
+      "email": "will@willclark.tech"
+    }
+  ],
+  "name": "lisk-commander",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LiskHQ/lisk-commander.git"
+  },
+  "scripts": {
+    "build": "babel src -d dist",
+    "cover": "if [ -z $JENKINS_HOME ]; then npm run cover:local; else npm run cover:ci; fi",
+    "cover:base": "NODE_ENV=test nyc report",
+    "cover:ci": "npm run cover:base -- --reporter=text-lcov mocha | coveralls -v",
+    "cover:local": "npm run cover:base -- --reporter=html --reporter=text mocha",
+    "cover:test": "NODE_ENV=test nyc  --include \"test/**\" --exclude \"**/node_modules/** coverage/**\" mocha test/specs",
+    "format": "prettier --write \"./*.{js,json,md}\" \"{docs,src,test}{,/**}/*.{js,json,md}\"",
+    "lint": "eslint .",
+    "lint:fix": "npm run lint -- --fix",
+    "prebuild": "if test -d dist; then rm -r dist; fi",
+    "precommit": "lint-staged && npm run lint",
+    "prepublishOnly": "rm -r ./node_modules && npm install && npm run prepush && npm run build",
+    "prepush": "npm run lint && npm test",
+    "start": "babel-node src/index.js",
+    "test": "if [ -z $JENKINS_HOME ]; then npm run test:local; else npm run test:ci; fi",
+    "test:ci": "NODE_ENV=test nyc --exclude \"**/node_modules/** coverage/**\" mocha test/specs",
+    "test:local": "NODE_ENV=test nyc mocha test/specs",
+    "test:watch": "npm run test:local -- --watch",
+    "test:watch:min": "npm run test:watch -- --reporter=min"
+  },
+  "version": "1.0.0"
+}

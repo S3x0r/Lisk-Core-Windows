@@ -1,0 +1,112 @@
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+exports.actionCreator = undefined;
+
+var _cryptography = require('../utils/cryptography');
+
+var _cryptography2 = _interopRequireDefault(_cryptography);
+
+var _error = require('../utils/error');
+
+var _helpers = require('../utils/helpers');
+
+var _input = require('../utils/input');
+
+var _input2 = _interopRequireDefault(_input);
+
+var _options = require('../utils/options');
+
+var _options2 = _interopRequireDefault(_options);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; } /*
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                            * LiskHQ/lisk-commander
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                            * Copyright © 2017–2018 Lisk Foundation
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                            *
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                            * See the LICENSE file at the top-level directory of this distribution
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                            * for licensing information.
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                            *
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                            * Unless otherwise agreed in a custom licensing agreement with the Lisk Foundation,
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                            * no part of this software, including this file, may be copied, modified,
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                            * propagated, or distributed except according to the terms contained in the
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                            * LICENSE file.
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                            *
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                            * Removal or modification of this copyright notice is prohibited.
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                            *
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                            */
+
+
+var description = 'Decrypts a previously encrypted message from a given sender public key for a known nonce using your secret passphrase.\n\n\tExample: decrypt message bba7e2e6a4639c431b68e31115a71ffefcb4e025a4d1656405dfdcd8384719e0 349d300c906a113340ff0563ef14a96c092236f331ca4639 e501c538311d38d3857afefa26207408f4bf7f1228\n';
+
+var processInputs = function processInputs(nonce, senderPublicKey, message) {
+	return function (_ref) {
+		var passphrase = _ref.passphrase,
+		    data = _ref.data;
+		return _cryptography2.default.decryptMessage({
+			cipher: message || data,
+			nonce: nonce,
+			passphrase: passphrase,
+			senderPublicKey: senderPublicKey
+		});
+	};
+};
+
+var actionCreator = exports.actionCreator = function actionCreator(vorpal) {
+	return function () {
+		var _ref3 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee(_ref2) {
+			var message = _ref2.message,
+			    nonce = _ref2.nonce,
+			    senderPublicKey = _ref2.senderPublicKey,
+			    options = _ref2.options;
+			var passphraseSource, messageSource;
+			return regeneratorRuntime.wrap(function _callee$(_context) {
+				while (1) {
+					switch (_context.prev = _context.next) {
+						case 0:
+							passphraseSource = options.passphrase;
+							messageSource = options.message;
+
+							if (!(!message && !messageSource)) {
+								_context.next = 4;
+								break;
+							}
+
+							throw new _error.ValidationError('No message was provided.');
+
+						case 4:
+							return _context.abrupt('return', (0, _input2.default)(vorpal, {
+								passphrase: {
+									source: passphraseSource
+								},
+								data: message ? null : {
+									source: messageSource
+								}
+							}).then(processInputs(nonce, senderPublicKey, message)));
+
+						case 5:
+						case 'end':
+							return _context.stop();
+					}
+				}
+			}, _callee, undefined);
+		}));
+
+		return function (_x) {
+			return _ref3.apply(this, arguments);
+		};
+	}();
+};
+
+var decryptMessage = (0, _helpers.createCommand)({
+	command: 'decrypt message <senderPublicKey> <nonce> [message]',
+	description: description,
+	actionCreator: actionCreator,
+	options: [_options2.default.passphrase, _options2.default.message],
+	errorPrefix: 'Could not decrypt message'
+});
+
+exports.default = decryptMessage;
