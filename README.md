@@ -67,6 +67,6 @@
     cd C:\lisk<br>
 
     and run Lisk Core:<br>
-    node app.js<br>
+    node app.js --network (network)<br>
 
 Done!
