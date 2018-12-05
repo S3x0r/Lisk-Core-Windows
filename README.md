@@ -1,7 +1,7 @@
 <h2>Tutorial how to install Lisk Core (from sources) on Windows 64bit machine</h2>
 
-1. Download and install nodejs 8.12.0:<br>
-   https://nodejs.org/download/release/v8.12.0/node-v8.12.0-x64.msi
+1. Download and install nodejs 8.14.0:<br>
+   https://nodejs.org/download/release/v8.14.0/node-v8.14.0-x64.msi
 
 2. Download and install Git:<br>
    https://github.com/git-for-windows/git/releases/download/v2.19.1.windows.1/Git-2.19.1-64-bit.exe
@@ -42,7 +42,7 @@
    cd C:&#92;<br>
    git clone https://github.com/LiskHQ/lisk.git<br>
    cd lisk<br>
-   git checkout testnet-master<br>
+   git checkout v1.3.1-rc.0 -b v1.3.1-rc.0<br>
    npm config set msvs_version 2015<br>
    npm install<br>
 
