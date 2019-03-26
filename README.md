@@ -1,10 +1,10 @@
 <h2>Tutorial how to install Lisk Core (from sources) on Windows 64bit machine</h2>
 
-1. Download and install nodejs 8.14.0:<br>
-   https://nodejs.org/download/release/v8.14.0/node-v8.14.0-x64.msi
+1. Download and install nodejs 10.14.1:<br>
+   https://nodejs.org/dist/v10.14.1/node-v10.14.1-x64.msi
 
 2. Download and install Git:<br>
-   https://github.com/git-for-windows/git/releases/download/v2.19.1.windows.1/Git-2.19.1-64-bit.exe
+   https://github.com/git-for-windows/git/releases/download/v2.21.0.windows.1/Git-2.21.0-64-bit.exe
 
 3. Download and install Python 2.7.14:<br>
    https://www.python.org/ftp/python/2.7.14/python-2.7.14.amd64.msi
@@ -42,7 +42,7 @@
    cd C:&#92;<br>
    git clone https://github.com/LiskHQ/lisk.git<br>
    cd lisk<br>
-   git checkout v1.3.1-rc.0 -b v1.3.1-rc.0<br>
+   git checkout v1.5.0-rc.2 -b v1.5.0-rc.2<br>
    npm config set msvs_version 2015<br>
    npm install<br>
 
@@ -53,8 +53,9 @@
    //child_process.execSync(`mkdir -p ${path.dirname(config.filename)}`);<br>
 
 10. Create "logs" directory in C:\lisk\
+    & "testnet" directory in C:\lisk\logs\
 
-11. In lisk directory edit: config.json<br>
+11. In directory "C:\lisk\config\default" edit: config.json<br>
     change line:<br>
     "consoleLogLevel": "none",<br>
     to:<br>
@@ -67,6 +68,6 @@
     cd C:\lisk<br>
 
     and run Lisk Core:<br>
-    node app.js --network (network)<br>
+    node app.js --network testnet<br>
 
 Done!
