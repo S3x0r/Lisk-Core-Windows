@@ -63,7 +63,7 @@
     "cli-table3": "=0.5.0",
     "lisk-elements": "=1.0.0",
     "lockfile": "=1.0.3",
-    "semver": "=5.5.0",
+    "semver": "=5.7.2",
     "strip-ansi": "=4.0.0",
     "vorpal": "github:liskhq/vorpal#v1.0.1-lisk"
   },
